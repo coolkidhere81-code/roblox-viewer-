@@ -1,0 +1,23 @@
+# Local runtime state - never publish these
+viewer_key.txt
+cloudflared.exe
+
+# Private Python environment created by setup.bat
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Logs
+*.log
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

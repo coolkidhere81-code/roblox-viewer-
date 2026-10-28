@@ -1,0 +1,20 @@
+# Roblox Viewer - Python packages
+#
+# Install with:
+#     python -m pip install -r setup\requirements.txt
+# or just double-click start.bat (it creates a private .venv for you).
+
+# Core: image handling, access to Windows APIs, screen capture fallback
+pillow>=10.0
+pywin32>=306
+numpy>=1.24
+mss>=9.0
+
+# Best-quality capture: one session per Roblox window, so a tile only ever
+# shows that window. If this fails to install, the viewer still runs with the
+# screen-capture fallback.
+windows-capture>=1.4
+
+# H.264 encoder. Optional: without it the viewer uses JPEG, which looks fine
+# on a LAN but uses much more bandwidth over a tunnel.
+av>=12.0
